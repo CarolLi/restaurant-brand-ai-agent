@@ -1,1 +1,38 @@
-{\n  "name": "restaurant-brand-ai-agent",\n  "version": "1.0.0",\n  "description": "A restaurant brand AI agent project",\n  "main": "index.js",\n  "scripts": {\n    "test": "jest"\n  },\n  "dependencies": {\n    "typescript": "^4.5.4",\n    "node": "^16.0.0",\n    "langchain": "latest",\n    "pg": "^8.7.1",\n    "redis": "^4.0.0"\n  },\n  "devDependencies": {\n    "jest": "^27.0.6",\n    "ts-jest": "^27.0.5",\n    "@types/jest": "^27.0.2"\n  }\n}
+{
+  "name": "restaurant-brand-ai-agent",
+  "version": "1.0.0",
+  "description": "全链路餐饮品牌智能运营与决策系统 - 集成品牌营销、行业洞察与多维销售分析的AI Agent平台",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "langchain": "^0.1.0",
+    "openai": "^4.0.0",
+    "axios": "^1.6.0",
+    "pg": "^8.10.0",
+    "redis": "^4.6.0",
+    "puppeteer": "^21.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "ts-node-dev": "^2.0.0",
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0"
+  },
+  "keywords": ["restaurant", "ai-agent", "restaurant-management", "sales-analytics"],
+  "author": "CarolLi",
+  "license": "MIT"
+}
