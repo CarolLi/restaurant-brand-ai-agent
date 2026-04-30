@@ -1,1 +1,1 @@
-
+{\n  "compilerOptions": {\n    "target": "ES6",\n    "module": "commonjs",\n    "strict": true,\n    "esModuleInterop": true\n  }\n}
